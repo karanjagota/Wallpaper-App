@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/van_persie"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:background="#000"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/horizontalScrollView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:id="@+id/imageView1"
+        android:src="@drawable/img1" />
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/img3" />
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/img4" />
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView5"
+            android:src="@drawable/img5" />
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView6"
+            android:src="@drawable/img6" />
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView7"
+            android:src="@drawable/van_persie" />
+    </LinearLayout>
+</HorizontalScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Set Wallpaper   "
+        android:id="@+id/button"
+        android:background="#000"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/horizontalScrollView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
